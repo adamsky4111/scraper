@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Services\ScrapingOlxService;
 use App\Services\ScrapingOtodomService;
 use Goutte\Client;
 use App\Entity\Offer;
@@ -14,7 +15,7 @@ class ScraperController
     /**
      * @Route("/home")
      */
-    public function showAction(ScrapingOtodomService $scrapingOtodomService)
+    public function showAction(ScrapingOlxService $scrapingOtodomService)
     {
         $scrapingOtodomService->scrap();
 

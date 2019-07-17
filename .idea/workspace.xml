@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941a596b-4825-472e-bb60-220ef151e8b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/OfferService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/UpdateCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OfferController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ScrapingService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ScrapingService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +40,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/OfferController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+              <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding>
                 <element signature="e#34#55#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Command/UpdateCommand.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+              <folding>
+                <element signature="e#31#64#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,6 +118,7 @@
         <option value="$PROJECT_DIR$/templates/offer/show.html.twig" />
         <option value="$PROJECT_DIR$/templates/offer/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/OfferController.php" />
+        <option value="$PROJECT_DIR$/src/Command/UpdateCommand.php" />
       </list>
     </option>
   </component>
@@ -206,6 +223,16 @@
             <path>
               <item name="Scraper" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scraper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scraper" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scraper" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Scraper" type="b2602c69:ProjectViewProjectNode" />
@@ -317,18 +344,18 @@
       <updated>1563269210078</updated>
       <workItem from="1563269211173" duration="47000" />
       <workItem from="1563269258727" duration="15956000" />
-      <workItem from="1563357452373" duration="14284000" />
+      <workItem from="1563357452373" duration="15855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30287000" />
+    <option name="totallyTimeSpent" value="31858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24599786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24599786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -480,9 +507,26 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/OfferController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/UpdateCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="e#31#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

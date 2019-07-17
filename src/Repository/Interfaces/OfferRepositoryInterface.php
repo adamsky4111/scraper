@@ -9,4 +9,6 @@ interface OfferRepositoryInterface
 
     public function save($offers);
 
+    public function deleteDuplicates();
+
 }

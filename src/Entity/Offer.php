@@ -42,6 +42,11 @@ class Offer
     private $city;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $portal;
+
+    /**
      * @return mixed
      */
     public function getId()
@@ -135,6 +140,22 @@ class Offer
     public function setCity($city): void
     {
         $this->city = $city;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPortal()
+    {
+        return $this->portal;
+    }
+
+    /**
+     * @param mixed $portal
+     */
+    public function setPortal($portal): void
+    {
+        $this->portal = $portal;
     }
 
 

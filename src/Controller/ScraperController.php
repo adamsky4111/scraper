@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Services\ScrapingInterface;
 use App\Services\ScrapingOlxService;
 use App\Services\ScrapingOtodomService;
+use App\Services\ScrapingService;
 use Goutte\Client;
 use App\Entity\Offer;
 use Symfony\Component\DomCrawler\Crawler;
@@ -15,9 +17,9 @@ class ScraperController
     /**
      * @Route("/home")
      */
-    public function showAction(ScrapingOlxService $scrapingOtodomService)
+    public function showAction(ScrapingService $scrapingService)
     {
-        $scrapingOtodomService->scrap();
+        $scrapingService->scrap();
 
         return new Response('');
     }

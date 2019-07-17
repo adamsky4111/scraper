@@ -30,31 +30,38 @@ class ScrapingOlxService implements ScrapingInterface
 
         $crawler = $client->request('GET', $url);
 
-        $elements = $crawler->filter('.offer')->each(function ($node){
+        $elements = $crawler->filter('.offer-wrapper')->each(function ($node){
             return $node->text();
         });
 
-        return $this->getOffers($elements);
+
+        $links = $crawler->filter('.marginright5')->extract(['href']);
+
+
+
+        return $this->getOffers($elements, $links);
     }
 
-    public function getOffers($elements)
+    public function getOffers($elements, $links)
     {
         $offers = array();
+        $temp = 0;
+
         foreach ($elements as $element) {
+
             $offer = new Offer();
-            $rawNode = str_replace('  ', '', $element);
-            $s = str_replace("\t", '', $rawNode);
-            $data = explode("\n", $s);
-            dd($data, $data['14']);
+
+            $element = str_replace(['  ', "\t"], '', $element);
+            $element = preg_split('/'."\n".'/', $element, -1, PREG_SPLIT_NO_EMPTY);
             $offer->setArea('nieznana');
-
-            $offer->setName($data['14']);
-
+            $offer->setName($element['0']);
             $offer->setCity('Olsztyn');
-            $offer->setPrice('sdfsdf');
-            $offer->setLink('fsdf');
-
+            $offer->setPrice($element['2']);
+            $offer->setLink($links[$temp]);
+            $offer->setPortal('Olx');
+            $temp++;
             $this->entityManager->persist($offer);
+
             array_push($offers, $offer);
         }
 

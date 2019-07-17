@@ -6,8 +6,7 @@ namespace App\Services;
 
 use App\Entity\Offer;
 use App\Repository\Custom\OfferRepository;
-use App\Repository\Interfaces\OfferRepositoryInterface;
-use App\Services\ScrapingInterface;
+
 use Doctrine\ORM\EntityManagerInterface;
 use Goutte\Client;
 
@@ -37,12 +36,17 @@ class ScrapingOtodomService implements ScrapingInterface
             return $node->text();
         });
 
-        return $this->getOffers($elements);
+        $links = $crawler->filter('.offer-item')->extract(['data-url']);
+
+        $images = $crawler->filter('.offer-item-image')->extract(['data-quick-gallery']);
+
+        return $this->getOffers($elements, $links);
     }
 
-    public function getOffers($elements)
+    public function getOffers($elements, $links)
     {
         $offers = array();
+        $temp = 0;
         foreach ($elements as $element)
         {
             $offer = new Offer();
@@ -53,10 +57,11 @@ class ScrapingOtodomService implements ScrapingInterface
             $offer->setName($data['5']);
             $offer->setCity('Olsztyn');
             $offer->setPrice($data['21']);
-            $offer->setLink('fsdf');
-
+            $offer->setLink($links[$temp]);
+            $offer->setPortal('Otodom');
             $this->entityManager->persist($offer);
             array_push($offers, $offer);
+            $temp++;
         }
 
         $this->entityManager->flush();

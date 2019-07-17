@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Offer index{% endblock %}
+
+{% block body %}
+    <h1>Offer index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Area</th>
+                <th>Price</th>
+                <th>Link</th>
+                <th>City</th>
+                <th>Portal</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for offer in offers %}
+            <tr>
+                <td>{{ offer.id }}</td>
+                <td>{{ offer.name }}</td>
+                <td>{{ offer.area }}</td>
+                <td>{{ offer.price }}</td>
+                <td>{{ offer.link }}</td>
+                <td>{{ offer.city }}</td>
+                <td>{{ offer.portal }}</td>
+                <td>
+                    <a href="{{offer.link}}">show</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}

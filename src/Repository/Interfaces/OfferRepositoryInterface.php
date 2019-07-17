@@ -11,4 +11,6 @@ interface OfferRepositoryInterface
 
     public function deleteDuplicates();
 
+    public function findAll();
+
 }

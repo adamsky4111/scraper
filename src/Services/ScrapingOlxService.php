@@ -34,10 +34,7 @@ class ScrapingOlxService implements ScrapingInterface
             return $node->text();
         });
 
-
         $links = $crawler->filter('.marginright5')->extract(['href']);
-
-
 
         return $this->getOffers($elements, $links);
     }

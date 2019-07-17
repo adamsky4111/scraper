@@ -23,7 +23,6 @@ class ScrapingService
     {
         $this->scrapingOlxService->scrap();
         $this->scrapingOtodomService->scrap();
-
         $this->duplicatesService->deleteDuplicates();
 
     }

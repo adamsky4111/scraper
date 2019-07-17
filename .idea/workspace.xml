@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941a596b-4825-472e-bb60-220ef151e8b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/DuplicatesService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ScrapingService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/OfferService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ScraperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ScraperController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Offer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/OfferController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ScrapingOtodomService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ScrapingOtodomService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ScrapingService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ScrapingService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,30 +25,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ScraperController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#34#69#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Services/ScrapingOtodomService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="89" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
-              <folding>
-                <element signature="e#34#55#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Services/DuplicatesService.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -62,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+            <state relative-caret-position="331">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#42#63#0#PHP" expanded="true" />
               </folding>
@@ -73,23 +47,30 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/OfferController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Services/ScrapingService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+            <state relative-caret-position="300">
+              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+              <folding>
+                <element signature="e#34#55#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php">
+        <entry file="file://$PROJECT_DIR$/templates/offer/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="465">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Services/OfferService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -110,13 +91,17 @@
         <option value="$PROJECT_DIR$/src/Repository/Doctrine/OfferRepository.php" />
         <option value="$PROJECT_DIR$/src/Services/ScrapingInterface.php" />
         <option value="$PROJECT_DIR$/src/Entity/Offer.php" />
-        <option value="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" />
         <option value="$PROJECT_DIR$/src/Services/DuplicatesService.php" />
         <option value="$PROJECT_DIR$/src/Controller/ScraperController.php" />
-        <option value="$PROJECT_DIR$/src/Services/ScrapingService.php" />
-        <option value="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" />
-        <option value="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Services/ScrapingOtodomService.php" />
+        <option value="$PROJECT_DIR$/src/Services/ScrapingOlxService.php" />
+        <option value="$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php" />
+        <option value="$PROJECT_DIR$/src/Services/ScrapingService.php" />
+        <option value="$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/Services/OfferService.php" />
+        <option value="$PROJECT_DIR$/templates/offer/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/offer/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/OfferController.php" />
       </list>
     </option>
   </component>
@@ -277,6 +262,12 @@
               <item name="Scraper" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Scraper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scraper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="offer" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -326,22 +317,22 @@
       <updated>1563269210078</updated>
       <workItem from="1563269211173" duration="47000" />
       <workItem from="1563269258727" duration="15956000" />
-      <workItem from="1563357452373" duration="13254000" />
+      <workItem from="1563357452373" duration="14284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29257000" />
+    <option name="totallyTimeSpent" value="30287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24599786" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24599786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -397,16 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Services/ScrapingOlxService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding>
-            <element signature="e#34#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/Doctrine/OfferRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -416,22 +397,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/ScrapingService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+        <state relative-caret-position="360">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/Interfaces/OfferRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ScraperController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="e#34#69#0#PHP" expanded="true" />
           </folding>
@@ -440,8 +421,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Services/ScrapingOtodomService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="301">
           <caret line="40" column="89" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/ScrapingOlxService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#34#55#0#PHP" expanded="true" />
           </folding>
@@ -457,16 +448,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/Custom/OfferRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+        <state relative-caret-position="331">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#42#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Services/OfferService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/offer/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/offer/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/OfferController.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+          <folding>
+            <element signature="e#34#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -26,6 +26,12 @@ class OfferRepository implements OfferRepositoryInterface
         }
         $this->entityManager = flush();
     }
+
+    public function  findAll()
+    {
+        return $this->repository->findAll();
+    }
+
     public function deleteDuplicates()
     {
 //        $query = $this->entityManager->createQuery(
